@@ -9,18 +9,18 @@ import javax.swing.*;
 public class Order 
 {
 	private Image Orderbackground= new ImageIcon(Client.class.getResource("../Images/OrderBackground.png")).getImage();
-	private Image Food1= new ImageIcon(Client.class.getResource("../Images/ÀÚÀå¸é.jpg")).getImage();
-	private Image Food2= new ImageIcon(Client.class.getResource("../Images/°£Â¥Àå.jpg")).getImage();
-	private Image Food3= new ImageIcon(Client.class.getResource("../Images/±º¸¸µÎ.jpg")).getImage();
-	private Image Food4= new ImageIcon(Client.class.getResource("../Images/³Ã¸é.jpg")).getImage();
-	private Image Food5= new ImageIcon(Client.class.getResource("../Images/¸¶ÆÄµÎºÎ.jpg")).getImage();
-	private Image Food6= new ImageIcon(Client.class.getResource("../Images/ººÀ½¹ä.jpg")).getImage();
-	private Image Food7= new ImageIcon(Client.class.getResource("../Images/»õ¿ìµ¤¹ä.jpg")).getImage();
-	private Image Food8= new ImageIcon(Client.class.getResource("../Images/¿ìµ¿.jpg")).getImage();
-	private Image Food9= new ImageIcon(Client.class.getResource("../Images/Á¦À°µ¤¹ä.jpg")).getImage();
-	private Image Food10= new ImageIcon(Client.class.getResource("../Images/Â¥Àå¹ä.jpg")).getImage();
-	private Image Food11= new ImageIcon(Client.class.getResource("../Images/Â«»Í.jpg")).getImage();
-	private Image Food12= new ImageIcon(Client.class.getResource("../Images/ÅÁ¼öÀ°.jpg")).getImage();
+	private Image Food1= new ImageIcon(Client.class.getResource("../Images/ìì¥ë©´.jpg")).getImage();
+	private Image Food2= new ImageIcon(Client.class.getResource("../Images/ê°„ì§œì¥.jpg")).getImage();
+	private Image Food3= new ImageIcon(Client.class.getResource("../Images/êµ°ë§Œë‘.jpg")).getImage();
+	private Image Food4= new ImageIcon(Client.class.getResource("../Images/ëƒ‰ë©´.jpg")).getImage();
+	private Image Food5= new ImageIcon(Client.class.getResource("../Images/ë§ˆíŒŒë‘ë¶€.jpg")).getImage();
+	private Image Food6= new ImageIcon(Client.class.getResource("../Images/ë³¶ìŒë°¥.jpg")).getImage();
+	private Image Food7= new ImageIcon(Client.class.getResource("../Images/ìƒˆìš°ë®ë°¥.jpg")).getImage();
+	private Image Food8= new ImageIcon(Client.class.getResource("../Images/ìš°ë™.jpg")).getImage();
+	private Image Food9= new ImageIcon(Client.class.getResource("../Images/ì œìœ¡ë®ë°¥.jpg")).getImage();
+	private Image Food10= new ImageIcon(Client.class.getResource("../Images/ì§œì¥ë°¥.jpg")).getImage();
+	private Image Food11= new ImageIcon(Client.class.getResource("../Images/ì§¬ë½•.jpg")).getImage();
+	private Image Food12= new ImageIcon(Client.class.getResource("../Images/íƒ•ìˆ˜ìœ¡.jpg")).getImage();
 	
 	private Image Menu1= new ImageIcon(Client.class.getResource("../Images/Menu1.png")).getImage();
 	private Image Menu2= new ImageIcon(Client.class.getResource("../Images/Menu2.png")).getImage();
@@ -43,7 +43,7 @@ public class Order
 	{
 		d.drawImage(Orderbackground, 0, 0, null);
 		
-		if(page1==true) // 1ÆäÀÌÁö À½½Ä
+		if(page1==true) // 1í˜ì´ì§€ ìŒì‹
 		{
 			d.drawImage(Food1, 10, 100,null);
 			d.drawImage(Food2, 10, 280,null);
@@ -56,7 +56,7 @@ public class Order
 			
 		}
 		
-		if(page2==true) // 2ÆäÀÌÁö À½½Ä
+		if(page2==true) // 2í˜ì´ì§€ ìŒì‹
 		{
 			d.drawImage(Food5, 10, 100,null);
 			d.drawImage(Food6, 10, 280,null);
@@ -69,7 +69,7 @@ public class Order
 
 		}
 		
-		if(page3==true) // 3ÆäÀÌÁö À½½Ä
+		if(page3==true) // 3í˜ì´ì§€ ìŒì‹
 		{
 			d.drawImage(Food9, 10, 100,null);
 			d.drawImage(Food10, 10, 280,null);

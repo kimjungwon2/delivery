@@ -48,7 +48,7 @@ public class CustomerInsert implements ActionListener{
 				st.executeUpdate(baseQuery);
 				st.close();
 			}
-			else System.out.println("¸ğµÎ ´Ù ÀÔ·ÂÇÏ¼Å¾ßÇÕ´Ï´Ù.");
+			else System.out.println("ëª¨ë‘ ë‹¤ ì…ë ¥í•˜ì…”ì•¼í•©ë‹ˆë‹¤.");
 			
 
 	}catch(SQLException ex){ex.printStackTrace();}
@@ -76,9 +76,9 @@ class CustomerDelete implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		int rowindex = table.getSelectedRow();            //¼±ÅÃµÈ RowÀÇ index
+		int rowindex = table.getSelectedRow();            //ì„ íƒëœ Rowì˜ index
 		
-		String Customerdata = (String)table.getValueAt(rowindex,0); // ¼±ÅÃÇÑ ÇàÀÇ id¸¦ ¹Ş¾Æ¿È
+		String Customerdata = (String)table.getValueAt(rowindex,0); // ì„ íƒí•œ í–‰ì˜ idë¥¼ ë°›ì•„ì˜´
 		
 		String baseQuery = "delete from customerinfo where id ='"+Customerdata+"';";
 		
@@ -89,7 +89,7 @@ class CustomerDelete implements ActionListener
 				st.executeUpdate(baseQuery);
 				st.close();	
 		        model.removeRow(rowindex); 
-		        model.fireTableDataChanged();	//Áö¿öÁø row °¡ ¹İ¿µµÇµµ·Ï Å×ÀÌºíÀ» ¾÷µ¥ÀÌÆ®ÇÑ´Ù.
+		        model.fireTableDataChanged();	//ì§€ì›Œì§„ row ê°€ ë°˜ì˜ë˜ë„ë¡ í…Œì´ë¸”ì„ ì—…ë°ì´íŠ¸í•œë‹¤.
 		        table.updateUI();
 		}catch(SQLException ex){ex.printStackTrace();}
 	}	
@@ -116,10 +116,10 @@ class CustomerUpdate implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		int rowindex = table.getSelectedRow();            //¼±ÅÃµÈ RowÀÇ index
-		int colindex = table.getSelectedColumn();	  //¼±ÅÃµÈ ColumnÀÇ index
+		int rowindex = table.getSelectedRow();            //ì„ íƒëœ Rowì˜ index
+		int colindex = table.getSelectedColumn();	  //ì„ íƒëœ Columnì˜ index
 		
-		String Customerdata = (String)table.getValueAt(rowindex,colindex); // ¼±ÅÃÇÑ Çà°ú ¿­ÀÇ µ¥ÀÌÅÍ ¹ŞÀ½
+		String Customerdata = (String)table.getValueAt(rowindex,colindex); // ì„ íƒí•œ í–‰ê³¼ ì—´ì˜ ë°ì´í„° ë°›ìŒ
 		String CustomerID = (String)table.getValueAt(rowindex,0);
 		String CustomerPW = (String)table.getValueAt(rowindex,1);
 		String CustomerNAME = (String)table.getValueAt(rowindex,2);
@@ -127,7 +127,7 @@ class CustomerUpdate implements ActionListener
 		String CustomerPHONENO = (String)table.getValueAt(rowindex,4);
 		String baseQuery = null;
 		
-		if(colindex==0) //ID º¯°æ
+		if(colindex==0) //ID ë³€ê²½
 		{
 			baseQuery = "update customerinfo set id ='"+Customerdata+
 					"' where pw='"+CustomerPW+"'"
@@ -135,19 +135,19 @@ class CustomerUpdate implements ActionListener
 					+" AND address='"+CustomerADDRESS+"'"
 					+" AND phoneno='"+CustomerPHONENO+"';";
 		}
-		else if(colindex==1) //PW º¯°æ
+		else if(colindex==1) //PW ë³€ê²½
 		{
 			baseQuery = "update customerinfo set pw ='"+Customerdata+"' where id='"+CustomerID+"';";
 		}
-		else if(colindex==2) //ÀÌ¸§ º¯°æ
+		else if(colindex==2) //ì´ë¦„ ë³€ê²½
 		{
 			baseQuery = "update customerinfo set name ='"+Customerdata+"' where id='"+CustomerID+"';";
 		}
-		else if(colindex==3) //ÁÖ¼Ò º¯°æ
+		else if(colindex==3) //ì£¼ì†Œ ë³€ê²½
 		{
 			baseQuery = "update customerinfo set address ='"+Customerdata+"' where id='"+CustomerID+"';";
 		}
-		else if(colindex==4) //ÀüÈ­¹øÈ£ º¯°æ
+		else if(colindex==4) //ì „í™”ë²ˆí˜¸ ë³€ê²½
 		{
 			baseQuery = "update customerinfo set phoeno ='"+Customerdata+"' where id='"+CustomerID+"';";
 		}
@@ -159,7 +159,7 @@ class CustomerUpdate implements ActionListener
 				st.executeUpdate(baseQuery);
 				st.close();	
 		        table.setValueAt(Customerdata,rowindex,colindex);
-		        model.fireTableDataChanged();	//updateµÈ µ¥ÀÌÅÍ°¡ ¹İ¿µµÇµµ·Ï Å×ÀÌºíÀ» ¾÷µ¥ÀÌÆ®ÇÑ´Ù.
+		        model.fireTableDataChanged();	//updateëœ ë°ì´í„°ê°€ ë°˜ì˜ë˜ë„ë¡ í…Œì´ë¸”ì„ ì—…ë°ì´íŠ¸í•œë‹¤.
 		        table.updateUI();
 		}catch(SQLException ex){ex.printStackTrace();}
 	}	

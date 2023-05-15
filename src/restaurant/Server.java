@@ -51,7 +51,7 @@ class PerClient implements Runnable
 	Socket socket;
 	BufferedReader reader;
 	PrintWriter writer;
-	EffectMusic Effect = new EffectMusic("¶òµ¿~.wav");
+	EffectMusic Effect = new EffectMusic("ëµë™~.wav");
 	
 	public PerClient(Server server, Socket socket) 
 	{
@@ -98,11 +98,11 @@ class PerClient implements Runnable
 
 			if(subst.equals("insert")) // insert
 			{
-				if(music.equals("insert into orderinfo")) Effect.startPlay(); // ÁÖ¹® Á¢¼ö½Ã È¿°úÀ½ ¹ß»ı
+				if(music.equals("insert into orderinfo")) Effect.startPlay(); // ì£¼ë¬¸ ì ‘ìˆ˜ì‹œ íš¨ê³¼ìŒ ë°œìƒ
 				st.executeUpdate(name); 
 			}
 			
-			else if(subst.equals("SELECT"))// id pw ·Î±×ÀÎÁ¤º¸ ¾òÀ½
+			else if(subst.equals("SELECT"))// id pw ë¡œê·¸ì¸ì •ë³´ ì–»ìŒ
 			{
 				if(list.equals("SELECT oi"))
 				{

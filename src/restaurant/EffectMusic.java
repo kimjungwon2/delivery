@@ -5,21 +5,21 @@ import java.applet.AudioClip;
 import javax.swing.JApplet;
 
 public class EffectMusic {
-	   AudioClip inputSound; // ÆÄÀÏ¸í¿¡ ±×³É ÆÄÀÏ¸í¸¸ ³ÖÀ»°Í // Áö°¡¾Ë¾Æ¼­ Ã£¾ÆÁÜ
+	   AudioClip inputSound; // íŒŒì¼ëª…ì— ê·¸ëƒ¥ íŒŒì¼ëª…ë§Œ ë„£ì„ê²ƒ // ì§€ê°€ì•Œì•„ì„œ ì°¾ì•„ì¤Œ
 	   
 	   public EffectMusic(String SoundFileURL)
 	   {
 	      try 
 	      {
 	    	  inputSound = JApplet.newAudioClip(Server.class.getResource(SoundFileURL));
-	      }catch (Exception e) {System.out.println("ÆÄÀÏÀ» ¸øÀĞ¾ú½À´Ï´Ù");}
+	      }catch (Exception e) {System.out.println("íŒŒì¼ì„ ëª»ì½ì—ˆìŠµë‹ˆë‹¤");}
 	   }
 	   
 	   public void startPlay(){
 	      try {
 	    	  inputSound.play();
-	    	 // System.out.println("À½¾ÇÀç»ı");
-	      }catch (Exception e) {System.out.println("À½¾Ç Àç»ıÀ» ¸øÇß½À´Ï´Ù");}
+	    	 // System.out.println("ìŒì•…ì¬ìƒ");
+	      }catch (Exception e) {System.out.println("ìŒì•… ì¬ìƒì„ ëª»í–ˆìŠµë‹ˆë‹¤");}
 	   }
 	   
 	   public void stopPlayer(){

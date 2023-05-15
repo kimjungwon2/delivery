@@ -71,7 +71,7 @@ public class OrderList
 				g.drawString(time1, 50, 205+100*x);
 				g.drawString(time2, 60, 230+100*x);
 			
-				//ÁÖ¼Ò
+				//ì£¼ì†Œ
 				g.setFont(new Font("Gothic",Font.BOLD,15));
 				if(address[x].length()<=10) g.drawString(address[x],180,180+100*x);
 				else if(address[x].length()>10 && address[x].length()<=20)
@@ -104,7 +104,7 @@ public class OrderList
 					g.drawString(Address3, 180,230+100*x);
 					g.drawString(Address4, 180,255+100*x);
 				}
-				//¸Þ´º
+				//ë©”ë‰´
 				if(menulist[x].length()<=15) g.drawString(menulist[x],340,180+100*x);
 				else if(menulist[x].length()>15 && menulist[x].length()<=30)
 				{
@@ -138,10 +138,10 @@ public class OrderList
 				}
 				
 				g.setFont(new Font("Gothic",Font.BOLD,20));
-				if(price[x].length()<=4) g.drawString(price[x]+"¿ø", 560, 215+100*x);
-				else if(price[x].length()<=5)g.drawString(price[x]+"¿ø", 550, 215+100*x);
-				else if(price[x].length()<=6)g.drawString(price[x]+"¿ø", 540, 215+100*x);
-				else g.drawString(price[x]+"¿ø", 530, 215+100*x);
+				if(price[x].length()<=4) g.drawString(price[x]+"ì›", 560, 215+100*x);
+				else if(price[x].length()<=5)g.drawString(price[x]+"ì›", 550, 215+100*x);
+				else if(price[x].length()<=6)g.drawString(price[x]+"ì›", 540, 215+100*x);
+				else g.drawString(price[x]+"ì›", 530, 215+100*x);
 			}
 		}
 	}

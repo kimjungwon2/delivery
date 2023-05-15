@@ -58,16 +58,16 @@ public class Login
 			System.out.println("phoneno="+r_phoneno);
 			socket.close();
 			
-			if(r_id==null)	// È¸¿ø°èÁ¤ÀÌ ¾øÀ»¶§
+			if(r_id==null)	// íšŒì›ê³„ì •ì´ ì—†ì„ë•Œ
 			{
 				NotRegist = true;
 			}
 			
-			else if(!s_pw.equals(r_pw))	// ÀÔ·Â ºñ¹Ğ¹øÈ£°¡ ´Ù¸¦°æ¿ì 
+			else if(!s_pw.equals(r_pw))	// ì…ë ¥ ë¹„ë°€ë²ˆí˜¸ê°€ ë‹¤ë¥¼ê²½ìš° 
 			{
 				DifferentPW = true;
 			}
-			else if(s_id.equals(r_id) && s_pw.equals(r_pw)) // ·Î±×ÀÎÀÌ ¼º°ø
+			else if(s_id.equals(r_id) && s_pw.equals(r_pw)) // ë¡œê·¸ì¸ì´ ì„±ê³µ
 			{
 				PassLogin = true;
 			}

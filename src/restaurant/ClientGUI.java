@@ -23,29 +23,29 @@ public class ClientGUI extends JFrame
 	private ImageIcon Registmember = new ImageIcon(Client.class.getResource("../images/회원가입버튼.png"));
 	private ImageIcon Cancel = new ImageIcon(Client.class.getResource("../images/취소버튼.png"));
 	private ImageIcon Left = new ImageIcon(Client.class.getResource("../images/왼쪽화살표.png"));
-	private ImageIcon TransparentRight = new ImageIcon(Client.class.getResource("../images/������ ������ ȭ��ǥ.png"));
-	private ImageIcon AddOrder = new ImageIcon(Client.class.getResource("../images/�ֹ�ǥ �߰�.png"));
+	private ImageIcon TransparentRight = new ImageIcon(Client.class.getResource("../images/투명한 오른쪽 화살표.png"));
+	private ImageIcon AddOrder = new ImageIcon(Client.class.getResource("../images/주문표 추가.png"));
 	private ImageIcon Minus = new ImageIcon(Client.class.getResource("../images/minus.png"));
 	private ImageIcon Plus = new ImageIcon(Client.class.getResource("../images/plus.png"));
 	private ImageIcon delete = new ImageIcon(Client.class.getResource("../images/delete.png"));
 	
-	private Image PleaseInputScreen = new ImageIcon(Client.class.getResource("../images/��� �Է��ϼ���.png")).getImage();
+	private Image PleaseInputScreen = new ImageIcon(Client.class.getResource("../images/모두 입력하세요.png")).getImage();
 	private Image background= new ImageIcon(Client.class.getResource("../Images/background.png")).getImage();
 	private Image Memberbackground= new ImageIcon(Client.class.getResource("../Images/MemberBackground.png")).getImage();
-	private Image Confirmpw = new ImageIcon(Client.class.getResource("../Images/��й�ȣ Ȯ��â.png")).getImage();
-	private Image NotRegist = new ImageIcon(Client.class.getResource("../Images/����Xâ.png")).getImage();
-	private Image Differentpw = new ImageIcon(Client.class.getResource("../Images/��й�ȣXâ.png")).getImage();
-	private Image OrderScreen = new ImageIcon(Client.class.getResource("../Images/��ٱ���.png")).getImage();
-	private Image OrderMenu = new ImageIcon(Client.class.getResource("../Images/�ֹ�1.png")).getImage();
+	private Image Confirmpw = new ImageIcon(Client.class.getResource("../Images/비밀번호 확인창.png")).getImage();
+	private Image NotRegist = new ImageIcon(Client.class.getResource("../Images/계정X창.png")).getImage();
+	private Image Differentpw = new ImageIcon(Client.class.getResource("../Images/비밀번호X창.png")).getImage();
+	private Image OrderScreen = new ImageIcon(Client.class.getResource("../Images/장바구니.png")).getImage();
+	private Image OrderMenu = new ImageIcon(Client.class.getResource("../Images/주문1.png")).getImage();
 	private Image OverOrder = new ImageIcon(Client.class.getResource("../Images/OverOrder.png")).getImage();
 	private Image OrderAlert = new ImageIcon(Client.class.getResource("../Images/AddOrder.png")).getImage();
 	private Image Blank = new ImageIcon(Client.class.getResource("../Images/Blank.png")).getImage();
 	private Image Overlap = new ImageIcon(Client.class.getResource("../Images/Overlap.png")).getImage();
-	private Image OrderEnd = new ImageIcon(Client.class.getResource("../Images/�ֹ��Ϸ�ȭ��.png")).getImage();
-	private Image ConfirmOr = new ImageIcon(Client.class.getResource("../Images/�ֹ��Ͻðڽ��ϱ�.png")).getImage();
-	private Image WrongID = new ImageIcon(Client.class.getResource("../Images/���̵��ߺ�üũ.png")).getImage();
-	private Image OverlapID = new ImageIcon(Client.class.getResource("../Images/�ߺ��Ⱦ��̵�.png")).getImage();
-	private Image OverlapIDX = new ImageIcon(Client.class.getResource("../Images/�ߺ���x.png")).getImage();
+	private Image OrderEnd = new ImageIcon(Client.class.getResource("../Images/주문완료화면.png")).getImage();
+	private Image ConfirmOr = new ImageIcon(Client.class.getResource("../Images/주문하시겠습니까.png")).getImage();
+	private Image WrongID = new ImageIcon(Client.class.getResource("../Images/아이디중복체크.png")).getImage();
+	private Image OverlapID = new ImageIcon(Client.class.getResource("../Images/중복된아이디.png")).getImage();
+	private Image OverlapIDX = new ImageIcon(Client.class.getResource("../Images/중복된x.png")).getImage();
 	
 	private JButton loginButton = new JButton(login);
 	private JButton RightButton1 = new JButton(Right);
@@ -58,9 +58,9 @@ public class ClientGUI extends JFrame
 	private JButton RegistMemberButton = new JButton(Registmember);
 	private JButton CancelButton = new JButton(Cancel);
 	private JButton Exitbutton = new JButton( new ImageIcon(Client.class.getResource("../Images/xbutton.png")));
-	private JButton LogoutButton = new JButton(new ImageIcon(Client.class.getResource("../Images/�α׾ƿ�.png")));
+	private JButton LogoutButton = new JButton(new ImageIcon(Client.class.getResource("../Images/로그아웃.png")));
 	private JButton OrderButton = new JButton(new ImageIcon(Client.class.getResource("../Images/OrderButton.png")));
-	private JButton OrderlistButton = new JButton(new ImageIcon(Client.class.getResource("../Images/�ֹ����.png")));
+	private JButton OrderlistButton = new JButton(new ImageIcon(Client.class.getResource("../Images/주문기록.png")));
 	private JButton Confirmbutton = new JButton( new ImageIcon(Client.class.getResource("../Images/button.gif")));
 	private JButton Confirmbuttonx = new JButton( new ImageIcon(Client.class.getResource("../Images/button.gif")));
 	private JButton Confirmbutton1 = new JButton( new ImageIcon(Client.class.getResource("../Images/button.gif")));
@@ -68,13 +68,13 @@ public class ClientGUI extends JFrame
 	private JButton OrderConfirm = new JButton( new ImageIcon(Client.class.getResource("../Images/button.gif")));
 	private JButton OverOrderConfirm = new JButton( new ImageIcon(Client.class.getResource("../Images/button.gif")));
 	private JButton OverLapConfirm = new JButton( new ImageIcon(Client.class.getResource("../Images/button.gif")));
-	private JButton DoOrder = new JButton( new ImageIcon(Client.class.getResource("../Images/�ֹ��ϱ�.png")));
-	private JButton MenuADD = new JButton( new ImageIcon(Client.class.getResource("../Images/�޴��߰�.png")));
-	private JButton Ordering = new JButton( new ImageIcon(Client.class.getResource("../Images/�ֹ��ϱ�Button.png")));
-	private JButton LastOrderButton = new JButton( new ImageIcon(Client.class.getResource("../Images/�����ֹ�����.png")));
+	private JButton DoOrder = new JButton( new ImageIcon(Client.class.getResource("../Images/주문하기.png")));
+	private JButton MenuADD = new JButton( new ImageIcon(Client.class.getResource("../Images/메뉴추가.png")));
+	private JButton Ordering = new JButton( new ImageIcon(Client.class.getResource("../Images/주문하기Button.png")));
+	private JButton LastOrderButton = new JButton( new ImageIcon(Client.class.getResource("../Images/지난주문내역.png")));
 	private JButton YesButton = new JButton( new ImageIcon(Client.class.getResource("../Images/Yes.png")));
 	private JButton NoButton = new JButton( new ImageIcon(Client.class.getResource("../Images/No.png")));
-	private JButton ConfirmIDButton = new JButton( new ImageIcon(Client.class.getResource("../Images/�ߺ�Ȯ��.png")));
+	private JButton ConfirmIDButton = new JButton( new ImageIcon(Client.class.getResource("../Images/중복확인.png")));
 	
 	private JButton Order1 = new JButton(AddOrder);
 	private JButton Order2 = new JButton(AddOrder);
@@ -117,14 +117,14 @@ public class ClientGUI extends JFrame
 	private JButton delete9 = new JButton(delete);
 
 	private JLabel Menubar =new JLabel(new ImageIcon(Client.class.getResource("../Images/menubar.png")));
-	private JTextField IDInput = new JTextField("���̵�"); int IDcount = 0;
-	private JPasswordField PWInput = new JPasswordField("��й�ȣ�Է�"); int PWCount=0;
-	private JTextField Regist_ID = new JTextField("���̵� �Է�");int RICount=0;
-	private JPasswordField Regist_PW = new JPasswordField("��й�ȣ �Է�");int RPCount=0;
-	private JPasswordField Regist_RePW = new JPasswordField("��й�ȣ Ȯ��");int RRPCount=0;
-	private JTextField Regist_name = new JTextField("�̸� �Է�");int RNCount=0;
-	private JTextField Regist_phone = new JTextField("��ȭ��ȣ �Է�");int RphCount=0;
-	private JTextField Regist_address = new JTextField("�ּ� �Է�");int RACount=0;
+	private JTextField IDInput = new JTextField("아이디"); int IDcount = 0;
+	private JPasswordField PWInput = new JPasswordField("비밀번호입력"); int PWCount=0;
+	private JTextField Regist_ID = new JTextField("아이디 입력");int RICount=0;
+	private JPasswordField Regist_PW = new JPasswordField("비밀번호 입력");int RPCount=0;
+	private JPasswordField Regist_RePW = new JPasswordField("비밀번호 확인");int RRPCount=0;
+	private JTextField Regist_name = new JTextField("이름 입력");int RNCount=0;
+	private JTextField Regist_phone = new JTextField("전화번호 입력");int RphCount=0;
+	private JTextField Regist_address = new JTextField("주소 입력");int RACount=0;
 
 	private String ID,PW,name,phoneno,address;
 	private String MyID;
@@ -165,8 +165,8 @@ public class ClientGUI extends JFrame
 	
 	public ClientGUI()
 	{
-		MyID=null; MyPW=null; MyName=null; MyAddress=null; MyPhoneno=null; //�α��� ����
-		MyMenu = null; MenuPrice = 0; // �޴����� 
+		MyID=null; MyPW=null; MyName=null; MyAddress=null; MyPhoneno=null; //로그인 정보
+		MyMenu = null; MenuPrice = 0; // 메뉴가격 
 		Menu1=null;Menu2=null;Menu3=null;Menu4=null;Menu5=null;Menu6=null;Menu7=null;Menu8=null;Menu9=null;
 		MenuPrice1=0;MenuPrice2=0;MenuPrice3=0;MenuPrice4=0;MenuPrice5=0;MenuPrice6=0;MenuPrice7=0;MenuPrice8=0;MenuPrice9=0;
 		MenuxPrice1=0;MenuxPrice2=0;MenuxPrice3=0;MenuxPrice4=0;MenuxPrice5=0;MenuxPrice6=0;MenuxPrice7=0;MenuxPrice8=0;MenuxPrice9=0;
@@ -176,12 +176,12 @@ public class ClientGUI extends JFrame
 		
 		setTitle("Restaurant");
 		setSize(630,860);
-		setResizable(false); // ũ������ x
-		setLocationRelativeTo(null); //â�� ���߾ӿ� �߰Բ����� 
+		setResizable(false); // 크기조정 x
+		setLocationRelativeTo(null); //창이 정중앙에 뜨게끔만듬 
 		setLayout(null);
 
 		setUndecorated(true);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// x��ư�� ������ ���� ����ǰ� �� ����
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// x버튼을 눌르면 완전 종료되게 끔 만듬
 		setVisible(true);
 		setBackground(new Color(0,0,0,0));
 		
@@ -216,7 +216,7 @@ public class ClientGUI extends JFrame
 		});
 		add(Menubar);
 		
-		// �α��� ������
+		// 로그인 페이지
 		loginButton.setBounds(165, 700, 315, 100);
 		loginButton.setBorderPainted(false);
 		loginButton.setContentAreaFilled(false);
@@ -225,21 +225,21 @@ public class ClientGUI extends JFrame
 			public void mousePressed(MouseEvent e) {
 				add(Confirmbutton1);add(Confirmbutton2);
 				
-				Login A= new Login(IDInput,PWInput);	// �α��� ���� �Է�
+				Login A= new Login(IDInput,PWInput);	// 로그인 정보 입력
 				
-				if(A.NotRegist==true)		// ��ϵ��� ���� ����
+				if(A.NotRegist==true)		// 등록되지 않은 계정
 				{
 					NotRegistAlert = true;
 				}
-				else if(A.DifferentPW==true)	//��й�ȣ�� �ٸ���� 
+				else if(A.DifferentPW==true)	//비밀번호가 다를경우 
 				{
 					DifferentPWAlert = true;
 				}
 				
-				else if(A.PassLogin==true)  // �α��� ����
+				else if(A.PassLogin==true)  // 로그인 성공
 				{
 					MyID=A.r_id; MyPW=A.r_pw; MyName=A.r_name; MyAddress=A.r_address; MyPhoneno=A.r_phoneno; 
-					// �α��� ������ ����� ���� ����
+					// 로그인 성공시 사용자 정보 받음
 					
 					loginScreen=false;
 					orderScreen = true;
@@ -259,7 +259,7 @@ public class ClientGUI extends JFrame
 					order.page1=true;order.page2=false;order.page3=false;
 					System.out.println(MyID+" "+MyPW+" "+ MyName+" "+MyAddress+" "+MyPhoneno);
 					
-					IDInput.setText("���̵�");IDcount = 0;PWCount=0; PWInput.setText("��й�ȣ�Է�");
+					IDInput.setText("아이디");IDcount = 0;PWCount=0; PWInput.setText("비밀번호입력");
 				}			
 			}
 		});	
@@ -289,7 +289,7 @@ public class ClientGUI extends JFrame
 		});	
 		
 		
-		//�����ֹ���ư 
+		//음식주문버튼 
 		Order1.setBounds(485, 205, 130, 50);
 		Order1.setBorderPainted(false);
 		Order1.setContentAreaFilled(false);
@@ -305,15 +305,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++; Food1 = true;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1; MenuPrice1 =4000;MenuxPrice1 =4000; Menu1 = "�����";} 
-					else if(Menu2==null){MenuNum2=1;MenuPrice2 =4000;MenuxPrice2 =4000; Menu2 = "�����";}
-					else if(Menu3==null){MenuNum3=1;MenuPrice3 =4000;MenuxPrice3 =4000; Menu3 = "�����";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =4000;MenuxPrice4 =4000;Menu4 = "�����";}
-					else if(Menu5==null){MenuNum5=1;MenuPrice5 =4000;MenuxPrice5 =4000; Menu5 = "�����";}
-					else if(Menu6==null){MenuNum6=1;MenuPrice6 =4000;MenuxPrice6 =4000; Menu6 = "�����";}
-					else if(Menu7==null){MenuNum7=1;MenuPrice7 =4000;MenuxPrice7 =4000; Menu7 = "�����";}
-					else if(Menu8==null){MenuNum8=1;MenuPrice8 =4000;MenuxPrice8 =4000;Menu8 = "�����";}
-					else if(Menu9==null){MenuNum9=1;MenuPrice9 =4000;MenuxPrice9 =4000;Menu9 = "�����";}
+					if(Menu1==null) {MenuNum1=1; MenuPrice1 =4000;MenuxPrice1 =4000; Menu1 = "자장면";} 
+					else if(Menu2==null){MenuNum2=1;MenuPrice2 =4000;MenuxPrice2 =4000; Menu2 = "자장면";}
+					else if(Menu3==null){MenuNum3=1;MenuPrice3 =4000;MenuxPrice3 =4000; Menu3 = "자장면";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =4000;MenuxPrice4 =4000;Menu4 = "자장면";}
+					else if(Menu5==null){MenuNum5=1;MenuPrice5 =4000;MenuxPrice5 =4000; Menu5 = "자장면";}
+					else if(Menu6==null){MenuNum6=1;MenuPrice6 =4000;MenuxPrice6 =4000; Menu6 = "자장면";}
+					else if(Menu7==null){MenuNum7=1;MenuPrice7 =4000;MenuxPrice7 =4000; Menu7 = "자장면";}
+					else if(Menu8==null){MenuNum8=1;MenuPrice8 =4000;MenuxPrice8 =4000;Menu8 = "자장면";}
+					else if(Menu9==null){MenuNum9=1;MenuPrice9 =4000;MenuxPrice9 =4000;Menu9 = "자장면";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -333,15 +333,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000; Menu1 = "��¥��";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000; Menu2 = "��¥��";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000; Menu3 = "��¥��";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000; Menu4 = "��¥��";}
-					else if(Menu5==null){MenuNum5=1;MenuPrice5 =5000;MenuxPrice5=5000;  Menu5 = "��¥��";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000; Menu6 = "��¥��";}
-					else if(Menu7==null){MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;  Menu7 = "��¥��";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000; Menu8 = "��¥��";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000; Menu9 = "��¥��";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000; Menu1 = "간짜장";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000; Menu2 = "간짜장";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000; Menu3 = "간짜장";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000; Menu4 = "간짜장";}
+					else if(Menu5==null){MenuNum5=1;MenuPrice5 =5000;MenuxPrice5=5000;  Menu5 = "간짜장";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000; Menu6 = "간짜장";}
+					else if(Menu7==null){MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;  Menu7 = "간짜장";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000; Menu8 = "간짜장";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000; Menu9 = "간짜장";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -361,15 +361,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =4500;MenuxPrice1 =4500; Menu1 = "������";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =4500;MenuxPrice2 =4500;Menu2 = "������";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =4500;MenuxPrice3 =4500;Menu3 = "������";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =4500;MenuxPrice4 =4500;Menu4 = "������";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =4500;MenuxPrice5 =4500;Menu5 = "������";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =4500;MenuxPrice6 =4500;Menu6 = "������";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =4500;MenuxPrice7 =4500;Menu7 = "������";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =4500;MenuxPrice8 =4500; Menu8 = "������";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =4500;MenuxPrice9 =4500;Menu9 = "������";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =4500;MenuxPrice1 =4500; Menu1 = "군만두";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =4500;MenuxPrice2 =4500;Menu2 = "군만두";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =4500;MenuxPrice3 =4500;Menu3 = "군만두";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =4500;MenuxPrice4 =4500;Menu4 = "군만두";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =4500;MenuxPrice5 =4500;Menu5 = "군만두";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =4500;MenuxPrice6 =4500;Menu6 = "군만두";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =4500;MenuxPrice7 =4500;Menu7 = "군만두";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =4500;MenuxPrice8 =4500; Menu8 = "군만두";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =4500;MenuxPrice9 =4500;Menu9 = "군만두";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -389,15 +389,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "�ø�";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "�ø�";}
-					else if(Menu3==null){MenuNum3=1;MenuPrice3 =5000; MenuxPrice3 =5000;Menu3 = "�ø�";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "�ø�";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "�ø�";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "�ø�";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "�ø�";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "�ø�";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "�ø�";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "냉면";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "냉면";}
+					else if(Menu3==null){MenuNum3=1;MenuPrice3 =5000; MenuxPrice3 =5000;Menu3 = "냉면";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "냉면";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "냉면";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "냉면";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "냉면";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "냉면";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "냉면";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -417,15 +417,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =10000;MenuxPrice1 =10000;Menu1 = "���ĵκ�";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =10000;MenuxPrice2 =10000;Menu2 = "���ĵκ�";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =10000;MenuxPrice3 =10000;Menu3 = "���ĵκ�";}
-					else if(Menu4==null){MenuNum4=1;MenuPrice4 =10000; MenuxPrice4 =10000;Menu4 = "���ĵκ�";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =10000;MenuxPrice5 =10000;Menu5 = "���ĵκ�";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =10000;MenuxPrice6 =10000;Menu6 = "���ĵκ�";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =10000;MenuxPrice7 =10000;Menu7 = "���ĵκ�";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =10000;MenuxPrice8 =10000;Menu8 = "���ĵκ�";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =10000;MenuxPrice9 =10000;Menu9 = "���ĵκ�";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =10000;MenuxPrice1 =10000;Menu1 = "마파두부";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =10000;MenuxPrice2 =10000;Menu2 = "마파두부";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =10000;MenuxPrice3 =10000;Menu3 = "마파두부";}
+					else if(Menu4==null){MenuNum4=1;MenuPrice4 =10000; MenuxPrice4 =10000;Menu4 = "마파두부";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =10000;MenuxPrice5 =10000;Menu5 = "마파두부";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =10000;MenuxPrice6 =10000;Menu6 = "마파두부";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =10000;MenuxPrice7 =10000;Menu7 = "마파두부";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =10000;MenuxPrice8 =10000;Menu8 = "마파두부";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =10000;MenuxPrice9 =10000;Menu9 = "마파두부";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -445,15 +445,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null)  {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "������";}
-					else if(Menu2==null)  {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "������";}
-					else if(Menu3==null)  {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "������";}
-					else if(Menu4==null)  {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "������";}
-					else if(Menu5==null)  {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "������";}
-					else if(Menu6==null)  {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "������";}
-					else if(Menu7==null)  {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "������";}
-					else if(Menu8==null)  {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "������";}
-					else if(Menu9==null)  {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "������";}
+					if(Menu1==null)  {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "볶음밥";}
+					else if(Menu2==null)  {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "볶음밥";}
+					else if(Menu3==null)  {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "볶음밥";}
+					else if(Menu4==null)  {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "볶음밥";}
+					else if(Menu5==null)  {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "볶음밥";}
+					else if(Menu6==null)  {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "볶음밥";}
+					else if(Menu7==null)  {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "볶음밥";}
+					else if(Menu8==null)  {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "볶음밥";}
+					else if(Menu9==null)  {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "볶음밥";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -473,15 +473,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =7000;MenuxPrice1 =7000;Menu1 = "���쵤��";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =7000;MenuxPrice2 =7000;Menu2 = "���쵤��";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =7000;MenuxPrice3 =7000;Menu3 = "���쵤��";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =7000;MenuxPrice4 =7000;Menu4 = "���쵤��";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =7000;MenuxPrice5 =7000;Menu5 = "���쵤��";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =7000;MenuxPrice6 =7000;Menu6 = "���쵤��";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =7000;MenuxPrice7 =7000;Menu7 = "���쵤��";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =7000;MenuxPrice8 =7000; Menu8 = "���쵤��";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =7000;MenuxPrice9 =7000;Menu9 = "���쵤��";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =7000;MenuxPrice1 =7000;Menu1 = "새우덮밥";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =7000;MenuxPrice2 =7000;Menu2 = "새우덮밥";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =7000;MenuxPrice3 =7000;Menu3 = "새우덮밥";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =7000;MenuxPrice4 =7000;Menu4 = "새우덮밥";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =7000;MenuxPrice5 =7000;Menu5 = "새우덮밥";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =7000;MenuxPrice6 =7000;Menu6 = "새우덮밥";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =7000;MenuxPrice7 =7000;Menu7 = "새우덮밥";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =7000;MenuxPrice8 =7000; Menu8 = "새우덮밥";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =7000;MenuxPrice9 =7000;Menu9 = "새우덮밥";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -501,15 +501,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "�쵿";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "�쵿";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "�쵿";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "�쵿";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "�쵿";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "�쵿";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "�쵿";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "�쵿";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "�쵿";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "우동";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "우동";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "우동";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "우동";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "우동";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "우동";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "우동";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "우동";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "우동";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -529,15 +529,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =7000;MenuxPrice1 =7000;Menu1 = "��������";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =7000;MenuxPrice2 =7000;Menu2 = "��������";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =7000;MenuxPrice3 =7000;Menu3 = "��������";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =7000;MenuxPrice4 =7000;Menu4 = "��������";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =7000;MenuxPrice5 =7000;Menu5 = "��������";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =7000;MenuxPrice6 =7000;Menu6 = "��������";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =7000;MenuxPrice7 =7000;Menu7 = "��������";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =7000;MenuxPrice8 =7000;Menu8 = "��������";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =7000;MenuxPrice9 =7000;Menu9 = "��������";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =7000;MenuxPrice1 =7000;Menu1 = "제육덮밥";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =7000;MenuxPrice2 =7000;Menu2 = "제육덮밥";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =7000;MenuxPrice3 =7000;Menu3 = "제육덮밥";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =7000;MenuxPrice4 =7000;Menu4 = "제육덮밥";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =7000;MenuxPrice5 =7000;Menu5 = "제육덮밥";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =7000;MenuxPrice6 =7000;Menu6 = "제육덮밥";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =7000;MenuxPrice7 =7000;Menu7 = "제육덮밥";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =7000;MenuxPrice8 =7000;Menu8 = "제육덮밥";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =7000;MenuxPrice9 =7000;Menu9 = "제육덮밥";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -557,15 +557,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "�����";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "�����";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "�����";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "�����";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000; Menu5 = "�����";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "�����";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "�����";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "�����";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "�����";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "자장밥";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "자장밥";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "자장밥";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "자장밥";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000; Menu5 = "자장밥";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "자장밥";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "자장밥";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000;Menu8 = "자장밥";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "자장밥";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -585,15 +585,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "«��";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "«��";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "«��";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "«��";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "«��";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "«��";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "«��";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000; Menu8 = "«��";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "«��";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =5000;MenuxPrice1 =5000;Menu1 = "짬뽕";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =5000;MenuxPrice2 =5000;Menu2 = "짬뽕";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =5000;MenuxPrice3 =5000;Menu3 = "짬뽕";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =5000;MenuxPrice4 =5000;Menu4 = "짬뽕";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =5000;MenuxPrice5 =5000;Menu5 = "짬뽕";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =5000;MenuxPrice6 =5000;Menu6 = "짬뽕";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =5000;MenuxPrice7 =5000;Menu7 = "짬뽕";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =5000;MenuxPrice8 =5000; Menu8 = "짬뽕";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =5000;MenuxPrice9 =5000;Menu9 = "짬뽕";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -613,15 +613,15 @@ public class ClientGUI extends JFrame
 					MenuNumber++;
 					OrAlert=true;add(OrderConfirm);
 					
-					if(Menu1==null) {MenuNum1=1;MenuPrice1 =12000;MenuxPrice1 =12000;Menu1 = "������";}
-					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =12000;MenuxPrice2 =12000;Menu2 = "������";}
-					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =12000;MenuxPrice3 =12000;Menu3 = "������";}
-					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =12000;MenuxPrice4 =12000;Menu4 = "������";}
-					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =12000;MenuxPrice5 =12000;Menu5 = "������";}
-					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =12000;MenuxPrice6 =12000;Menu6 = "������";}
-					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =12000;MenuxPrice7 =12000;Menu7 = "������";}
-					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =12000; MenuxPrice8 =12000;Menu8 = "������";}
-					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =12000;MenuxPrice9 =12000;Menu9 = "������";}
+					if(Menu1==null) {MenuNum1=1;MenuPrice1 =12000;MenuxPrice1 =12000;Menu1 = "탕수육";}
+					else if(Menu2==null) {MenuNum2=1;MenuPrice2 =12000;MenuxPrice2 =12000;Menu2 = "탕수육";}
+					else if(Menu3==null) {MenuNum3=1;MenuPrice3 =12000;MenuxPrice3 =12000;Menu3 = "탕수육";}
+					else if(Menu4==null) {MenuNum4=1;MenuPrice4 =12000;MenuxPrice4 =12000;Menu4 = "탕수육";}
+					else if(Menu5==null) {MenuNum5=1;MenuPrice5 =12000;MenuxPrice5 =12000;Menu5 = "탕수육";}
+					else if(Menu6==null) {MenuNum6=1;MenuPrice6 =12000;MenuxPrice6 =12000;Menu6 = "탕수육";}
+					else if(Menu7==null) {MenuNum7=1;MenuPrice7 =12000;MenuxPrice7 =12000;Menu7 = "탕수육";}
+					else if(Menu8==null) {MenuNum8=1;MenuPrice8 =12000; MenuxPrice8 =12000;Menu8 = "탕수육";}
+					else if(Menu9==null) {MenuNum9=1;MenuPrice9 =12000;MenuxPrice9 =12000;Menu9 = "탕수육";}
 				}
 				else if(MenuNumber>=9){Over = true; add(OverOrderConfirm);}
 			}
@@ -692,7 +692,7 @@ public class ClientGUI extends JFrame
 		
 		
 		
-		//���� ȭ��ǥ (1������)
+		//음식 화살표 (1페이지)
 		RightButton1.setBounds(420, 760, 160, 150);
 		RightButton1.setBorderPainted(false);
 		RightButton1.setContentAreaFilled(false);
@@ -713,7 +713,7 @@ public class ClientGUI extends JFrame
 		LeftButton1.setContentAreaFilled(false);
 		LeftButton1.setFocusPainted(false);
 		
-		//���� ȭ��ǥ (2������)
+		//음식 화살표 (2페이지)
 		RightButton2.setBounds(420, 760, 160, 150);
 		RightButton2.setBorderPainted(false);
 		RightButton2.setContentAreaFilled(false);
@@ -742,7 +742,7 @@ public class ClientGUI extends JFrame
 				RightButton1.setVisible(true);LeftButton1.setVisible(true);
 			}
 		});	
-		//����ȭ��ǥ 3������
+		//음식화살표 3페이지
 		RightButton3.setBounds(420, 760, 160, 150);
 		RightButton3.setBorderPainted(false);
 		RightButton3.setContentAreaFilled(false);
@@ -783,7 +783,7 @@ public class ClientGUI extends JFrame
 				if(PWCount==1)PWInput.setText("");
 			}
 		});	
-		// ȸ������ 
+		// 회원가입 
 		
 		Regist_ID.setBounds(40, 300, 550, 30);
 		Regist_ID.addMouseListener(new MouseAdapter() 
@@ -869,7 +869,7 @@ public class ClientGUI extends JFrame
 					
 					myID = reader.readLine();
 					
-					// �ߺ��Ⱦ��̵� �˻�
+					// 중복된아이디 검사
 					
 					if(myID==null) {IDConfirm = true;correctID=true;} 
 					else {IDConfirm = false; pleaseID = true;}
@@ -881,7 +881,7 @@ public class ClientGUI extends JFrame
 			}
 		});	
 		
-		// ȸ������ ��ư
+		// 회원가입 버튼
 		RegistMemberButton.setBounds(180, 720, 100, 50);
 		RegistMemberButton.setBorderPainted(false);
 		RegistMemberButton.setContentAreaFilled(false);
@@ -903,12 +903,12 @@ public class ClientGUI extends JFrame
 				
 				if(wrongID == false) pleaseConfirm = true;
 				else if(IDConfirm == false) pleaseConfirm = true;
-				else if(Regist_ID1.equals("���̵� �Է�")||Regist_ID1.equals("")) PleaseInput = true;
-				else if(Regist_name1.equals("�̸� �Է�")||Regist_name1.equals("")) PleaseInput = true;
-				else if(Regist_phone1.equals("��ȭ��ȣ �Է�")||Regist_phone1.equals("")) PleaseInput = true;
-				else if(Regist_address1.equals("�ּ� �Է�")||Regist_address1.equals("")) PleaseInput = true;
-				else if(confirmPW==0) WrongPwScreen = true; // ��й�ȣ Ȯ�� ��ư�̶� ��й�ȣ�� �ٸ��� 
-				else if(confirmPW==1)			// ��й�ȣ Ȯ�� ��ư�̶� ��й�ȣ�� ������ ȸ������
+				else if(Regist_ID1.equals("아이디 입력")||Regist_ID1.equals("")) PleaseInput = true;
+				else if(Regist_name1.equals("이름 입력")||Regist_name1.equals("")) PleaseInput = true;
+				else if(Regist_phone1.equals("전화번호 입력")||Regist_phone1.equals("")) PleaseInput = true;
+				else if(Regist_address1.equals("주소 입력")||Regist_address1.equals("")) PleaseInput = true;
+				else if(confirmPW==0) WrongPwScreen = true; // 비밀번호 확인 버튼이랑 비밀번호가 다를시 
+				else if(confirmPW==1)			// 비밀번호 확인 버튼이랑 비밀번호가 같을시 회원가입
 				{
 					buttonPress=true;
 					
@@ -963,7 +963,7 @@ public class ClientGUI extends JFrame
 				pleaseConfirm = false; pleaseID = false;
 			}
 		});	
-		Confirmbuttonx.setBounds(370, 490, 100, 50); // ���̵� �ߺ��˻�
+		Confirmbuttonx.setBounds(370, 490, 100, 50); // 아이디 중복검사
 		Confirmbuttonx.setBorderPainted(false);
 		Confirmbuttonx.setContentAreaFilled(false);
 		Confirmbuttonx.setFocusPainted(false);
@@ -1002,8 +1002,8 @@ public class ClientGUI extends JFrame
 				Regist_address.setVisible(false);
 				
 				IDcount = 0;PWCount=0;
-				IDInput.setText("���̵�");
-				PWInput.setText("��й�ȣ�Է�");
+				IDInput.setText("아이디");
+				PWInput.setText("비밀번호입력");
 			}
 		});	
 
@@ -1030,15 +1030,15 @@ public class ClientGUI extends JFrame
 				loginScreen=false;
 				
 				RICount=0;RPCount=0;RRPCount=0;RNCount=0;RphCount=0;RACount=0;
-				Regist_ID.setText("���̵� �Է�");
-				Regist_PW.setText("��й�ȣ �Է�");
-				Regist_RePW.setText("��й�ȣ Ȯ��");
-				Regist_name.setText("�̸� �Է�");
-				Regist_phone.setText("��ȭ��ȣ �Է�");
-				Regist_address.setText("�ּ� �Է�");
+				Regist_ID.setText("아이디 입력");
+				Regist_PW.setText("비밀번호 입력");
+				Regist_RePW.setText("비밀번호 확인");
+				Regist_name.setText("이름 입력");
+				Regist_phone.setText("전화번호 입력");
+				Regist_address.setText("주소 입력");
 			}
 		});	
-		// �α׾ƿ� & �ֹ����
+		// 로그아웃 & 주문기록
 		LogoutButton.setBounds(20, 40, 100, 30);
 		LogoutButton.setBorderPainted(false);
 		LogoutButton.setContentAreaFilled(false);
@@ -1067,16 +1067,16 @@ public class ClientGUI extends JFrame
 				Food1=false;Food2=false;Food3=false;Food4=false;Food5=false;Food6=false;
 				Food7=false;Food8=false;Food9=false;Food10=false;Food11=false;Food12=false;
 				
-				//�α��� ���� �ʱ�ȭ
-				MyID=null; MyPW=null; MyName=null; MyAddress=null; MyPhoneno=null; //�α��� ����
-				MyMenu = null; MenuPrice = 0; // �޴����� 
+				//로그인 정보 초기화
+				MyID=null; MyPW=null; MyName=null; MyAddress=null; MyPhoneno=null; //로그인 정보
+				MyMenu = null; MenuPrice = 0; // 메뉴가격 
 				Menu1=null;Menu2=null;Menu3=null;Menu4=null;Menu5=null;Menu6=null;Menu7=null;Menu8=null;Menu9=null;
 				MenuPrice1=0;MenuPrice2=0;MenuPrice3=0;MenuPrice4=0;MenuPrice5=0;MenuPrice6=0;MenuPrice7=0;MenuPrice8=0;MenuPrice9=0;
 				MenuxPrice1=0;MenuxPrice2=0;MenuxPrice3=0;MenuxPrice4=0;MenuxPrice5=0;MenuxPrice6=0;MenuxPrice7=0;MenuxPrice8=0;MenuxPrice9=0;
 				MenuNum1=0;MenuNum2=0;MenuNum3=0;MenuNum4=0;MenuNum5=0;MenuNum6=0;MenuNum7=0;MenuNum8=0;MenuNum9=0;
 				MenuNumber = 0;	IDcount = 0;PWCount=0;ol.listNum = 0;ConfirmOrder=false;
-				IDInput.setText("���̵�");
-				PWInput.setText("��й�ȣ�Է�");
+				IDInput.setText("아이디");
+				PWInput.setText("비밀번호입력");
 				
 				System.out.println(MyID+" "+MyPW+" "+ MyName+" "+MyAddress+" "+MyPhoneno);
 			}
@@ -1098,7 +1098,7 @@ public class ClientGUI extends JFrame
 				Order9.setVisible(false);Order10.setVisible(false);Order11.setVisible(false);Order12.setVisible(false);
 				RightButton1.setVisible(true);LeftButton1.setVisible(true);RightButton2.setVisible(false);LeftButton2.setVisible(false);
 				RightButton3.setVisible(false);LeftButton3.setVisible(false);
-				MyMenu = null; MenuPrice = 0; // �޴����� 
+				MyMenu = null; MenuPrice = 0; // 메뉴가격 
 				Menu1=null;Menu2=null;Menu3=null;Menu4=null;Menu5=null;Menu6=null;Menu7=null;Menu8=null;Menu9=null;
 				MenuPrice1=0;MenuPrice2=0;MenuPrice3=0;MenuPrice4=0;MenuPrice5=0;MenuPrice6=0;MenuPrice7=0;MenuPrice8=0;MenuPrice9=0;
 				MenuxPrice1=0;MenuxPrice2=0;MenuxPrice3=0;MenuxPrice4=0;MenuxPrice5=0;MenuxPrice6=0;MenuxPrice7=0;MenuxPrice8=0;MenuxPrice9=0;
@@ -1129,7 +1129,7 @@ public class ClientGUI extends JFrame
 			}
 		});
 		
-		//��ٱ��� 
+		//장바구니 
 		
 		MenuADD.setBounds(80, 810, 219, 45);
 		MenuADD.setBorderPainted(false);
@@ -1193,18 +1193,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu1.equals("�����")) Food1 = false;
-				else if(Menu1.equals("��¥��")) Food2 = false;
-				else if(Menu1.equals("������")) Food3 = false;
-				else if(Menu1.equals("�ø�"))  Food4 = false;
-				else if(Menu1.equals("���ĵκ�")) Food5 = false;
-				else if(Menu1.equals("������")) Food6 = false;
-				else if(Menu1.equals("���쵤��")) Food7 = false;
-				else if(Menu1.equals("�쵿")) Food8 = false;
-				else if(Menu1.equals("��������")) Food9 = false;
-				else if(Menu1.equals("�����")) Food10 = false;
-				else if(Menu1.equals("«��")) Food11 = false;
-				else if(Menu1.equals("������")) Food12 = false;
+				if(Menu1.equals("자장면")) Food1 = false;
+				else if(Menu1.equals("간짜장")) Food2 = false;
+				else if(Menu1.equals("군만두")) Food3 = false;
+				else if(Menu1.equals("냉면"))  Food4 = false;
+				else if(Menu1.equals("마파두부")) Food5 = false;
+				else if(Menu1.equals("볶음밥")) Food6 = false;
+				else if(Menu1.equals("새우덮밥")) Food7 = false;
+				else if(Menu1.equals("우동")) Food8 = false;
+				else if(Menu1.equals("제육덮밥")) Food9 = false;
+				else if(Menu1.equals("자장밥")) Food10 = false;
+				else if(Menu1.equals("짬뽕")) Food11 = false;
+				else if(Menu1.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice1 = 0; Menu1=null;
 				MenuPrice-=MenuPrice1*MenuNum1;MenuNum1=0;MenuPrice1=0;MenuNumber--;
@@ -1245,18 +1245,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu2.equals("�����")) Food1 = false;
-				else if(Menu2.equals("��¥��")) Food2 = false;
-				else if(Menu2.equals("������")) Food3 = false;
-				else if(Menu2.equals("�ø�"))  Food4 = false;
-				else if(Menu2.equals("���ĵκ�")) Food5 = false;
-				else if(Menu2.equals("������")) Food6 = false;
-				else if(Menu2.equals("���쵤��")) Food7 = false;
-				else if(Menu2.equals("�쵿")) Food8 = false;
-				else if(Menu2.equals("��������")) Food9 = false;
-				else if(Menu2.equals("�����")) Food10 = false;
-				else if(Menu2.equals("«��")) Food11 = false;
-				else if(Menu2.equals("������")) Food12 = false;
+				if(Menu2.equals("자장면")) Food1 = false;
+				else if(Menu2.equals("간짜장")) Food2 = false;
+				else if(Menu2.equals("군만두")) Food3 = false;
+				else if(Menu2.equals("냉면"))  Food4 = false;
+				else if(Menu2.equals("마파두부")) Food5 = false;
+				else if(Menu2.equals("볶음밥")) Food6 = false;
+				else if(Menu2.equals("새우덮밥")) Food7 = false;
+				else if(Menu2.equals("우동")) Food8 = false;
+				else if(Menu2.equals("제육덮밥")) Food9 = false;
+				else if(Menu2.equals("자장밥")) Food10 = false;
+				else if(Menu2.equals("짬뽕")) Food11 = false;
+				else if(Menu2.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice2 = 0; Menu2=null;
 				MenuPrice-=MenuPrice2*MenuNum2;MenuNum2=0;MenuPrice2=0;MenuNumber--;
@@ -1296,18 +1296,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu3.equals("�����")) Food1 = false;
-				else if(Menu3.equals("��¥��")) Food2 = false;
-				else if(Menu3.equals("������")) Food3 = false;
-				else if(Menu3.equals("�ø�"))  Food4 = false;
-				else if(Menu3.equals("���ĵκ�")) Food5 = false;
-				else if(Menu3.equals("������")) Food6 = false;
-				else if(Menu3.equals("���쵤��")) Food7 = false;
-				else if(Menu3.equals("�쵿")) Food8 = false;
-				else if(Menu3.equals("��������")) Food9 = false;
-				else if(Menu3.equals("�����")) Food10 = false;
-				else if(Menu3.equals("«��")) Food11 = false;
-				else if(Menu3.equals("������")) Food12 = false;
+				if(Menu3.equals("자장면")) Food1 = false;
+				else if(Menu3.equals("간짜장")) Food2 = false;
+				else if(Menu3.equals("군만두")) Food3 = false;
+				else if(Menu3.equals("냉면"))  Food4 = false;
+				else if(Menu3.equals("마파두부")) Food5 = false;
+				else if(Menu3.equals("볶음밥")) Food6 = false;
+				else if(Menu3.equals("새우덮밥")) Food7 = false;
+				else if(Menu3.equals("우동")) Food8 = false;
+				else if(Menu3.equals("제육덮밥")) Food9 = false;
+				else if(Menu3.equals("자장밥")) Food10 = false;
+				else if(Menu3.equals("짬뽕")) Food11 = false;
+				else if(Menu3.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice3 = 0; Menu3=null;
 				MenuPrice-=MenuPrice3*MenuNum3;MenuNum3=0;MenuPrice3=0;MenuNumber--;
@@ -1347,18 +1347,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu4.equals("�����")) Food1 = false;
-				else if(Menu4.equals("��¥��")) Food2 = false;
-				else if(Menu4.equals("������")) Food3 = false;
-				else if(Menu4.equals("�ø�"))  Food4 = false;
-				else if(Menu4.equals("���ĵκ�")) Food5 = false;
-				else if(Menu4.equals("������")) Food6 = false;
-				else if(Menu4.equals("���쵤��")) Food7 = false;
-				else if(Menu4.equals("�쵿")) Food8 = false;
-				else if(Menu4.equals("��������")) Food9 = false;
-				else if(Menu4.equals("�����")) Food10 = false;
-				else if(Menu4.equals("«��")) Food11 = false;
-				else if(Menu4.equals("������")) Food12 = false;
+				if(Menu4.equals("자장면")) Food1 = false;
+				else if(Menu4.equals("간짜장")) Food2 = false;
+				else if(Menu4.equals("군만두")) Food3 = false;
+				else if(Menu4.equals("냉면"))  Food4 = false;
+				else if(Menu4.equals("마파두부")) Food5 = false;
+				else if(Menu4.equals("볶음밥")) Food6 = false;
+				else if(Menu4.equals("새우덮밥")) Food7 = false;
+				else if(Menu4.equals("우동")) Food8 = false;
+				else if(Menu4.equals("제육덮밥")) Food9 = false;
+				else if(Menu4.equals("자장밥")) Food10 = false;
+				else if(Menu4.equals("짬뽕")) Food11 = false;
+				else if(Menu4.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice4 = 0; Menu4=null;
 				MenuPrice-=MenuPrice4*MenuNum4;MenuNum4=0;MenuPrice4=0;MenuNumber--;
@@ -1398,18 +1398,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu5.equals("�����")) Food1 = false;
-				else if(Menu5.equals("��¥��")) Food2 = false;
-				else if(Menu5.equals("������")) Food3 = false;
-				else if(Menu5.equals("�ø�"))  Food4 = false;
-				else if(Menu5.equals("���ĵκ�")) Food5 = false;
-				else if(Menu5.equals("������")) Food6 = false;
-				else if(Menu5.equals("���쵤��")) Food7 = false;
-				else if(Menu5.equals("�쵿")) Food8 = false;
-				else if(Menu5.equals("��������")) Food9 = false;
-				else if(Menu5.equals("�����")) Food10 = false;
-				else if(Menu5.equals("«��")) Food11 = false;
-				else if(Menu5.equals("������")) Food12 = false;
+				if(Menu5.equals("자장면")) Food1 = false;
+				else if(Menu5.equals("간짜장")) Food2 = false;
+				else if(Menu5.equals("군만두")) Food3 = false;
+				else if(Menu5.equals("냉면"))  Food4 = false;
+				else if(Menu5.equals("마파두부")) Food5 = false;
+				else if(Menu5.equals("볶음밥")) Food6 = false;
+				else if(Menu5.equals("새우덮밥")) Food7 = false;
+				else if(Menu5.equals("우동")) Food8 = false;
+				else if(Menu5.equals("제육덮밥")) Food9 = false;
+				else if(Menu5.equals("자장밥")) Food10 = false;
+				else if(Menu5.equals("짬뽕")) Food11 = false;
+				else if(Menu5.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice5 = 0; Menu5=null;
 				MenuPrice-=MenuPrice5*MenuNum5;MenuNum5=0;MenuPrice5=0;MenuNumber--;
@@ -1449,18 +1449,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu6.equals("�����")) Food1 = false;
-				else if(Menu6.equals("��¥��")) Food2 = false;
-				else if(Menu6.equals("������")) Food3 = false;
-				else if(Menu6.equals("�ø�"))  Food4 = false;
-				else if(Menu6.equals("���ĵκ�")) Food5 = false;
-				else if(Menu6.equals("������")) Food6 = false;
-				else if(Menu6.equals("���쵤��")) Food7 = false;
-				else if(Menu6.equals("�쵿")) Food8 = false;
-				else if(Menu6.equals("��������")) Food9 = false;
-				else if(Menu6.equals("�����")) Food10 = false;
-				else if(Menu6.equals("«��")) Food11 = false;
-				else if(Menu6.equals("������")) Food12 = false;
+				if(Menu6.equals("자장면")) Food1 = false;
+				else if(Menu6.equals("간짜장")) Food2 = false;
+				else if(Menu6.equals("군만두")) Food3 = false;
+				else if(Menu6.equals("냉면"))  Food4 = false;
+				else if(Menu6.equals("마파두부")) Food5 = false;
+				else if(Menu6.equals("볶음밥")) Food6 = false;
+				else if(Menu6.equals("새우덮밥")) Food7 = false;
+				else if(Menu6.equals("우동")) Food8 = false;
+				else if(Menu6.equals("제육덮밥")) Food9 = false;
+				else if(Menu6.equals("자장밥")) Food10 = false;
+				else if(Menu6.equals("짬뽕")) Food11 = false;
+				else if(Menu6.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice6 = 0; Menu6=null;
 				MenuPrice-=MenuPrice6*MenuNum6;MenuNum6=0;MenuPrice6=0;MenuNumber--;
@@ -1500,18 +1500,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu7.equals("�����")) Food1 = false;
-				else if(Menu7.equals("��¥��")) Food2 = false;
-				else if(Menu7.equals("������")) Food3 = false;
-				else if(Menu7.equals("�ø�"))  Food4 = false;
-				else if(Menu7.equals("���ĵκ�")) Food5 = false;
-				else if(Menu7.equals("������")) Food6 = false;
-				else if(Menu7.equals("���쵤��")) Food7 = false;
-				else if(Menu7.equals("�쵿")) Food8 = false;
-				else if(Menu7.equals("��������")) Food9 = false;
-				else if(Menu7.equals("�����")) Food10 = false;
-				else if(Menu7.equals("«��")) Food11 = false;
-				else if(Menu7.equals("������")) Food12 = false;
+				if(Menu7.equals("자장면")) Food1 = false;
+				else if(Menu7.equals("간짜장")) Food2 = false;
+				else if(Menu7.equals("군만두")) Food3 = false;
+				else if(Menu7.equals("냉면"))  Food4 = false;
+				else if(Menu7.equals("마파두부")) Food5 = false;
+				else if(Menu7.equals("볶음밥")) Food6 = false;
+				else if(Menu7.equals("새우덮밥")) Food7 = false;
+				else if(Menu7.equals("우동")) Food8 = false;
+				else if(Menu7.equals("제육덮밥")) Food9 = false;
+				else if(Menu7.equals("자장밥")) Food10 = false;
+				else if(Menu7.equals("짬뽕")) Food11 = false;
+				else if(Menu7.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice7 = 0; Menu7=null;
 				MenuPrice-=MenuPrice7*MenuNum7;MenuNum7=0;MenuPrice7=0;MenuNumber--;
@@ -1551,18 +1551,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu8.equals("�����")) Food1 = false;
-				else if(Menu8.equals("��¥��")) Food2 = false;
-				else if(Menu8.equals("������")) Food3 = false;
-				else if(Menu8.equals("�ø�"))  Food4 = false;
-				else if(Menu8.equals("���ĵκ�")) Food5 = false;
-				else if(Menu8.equals("������")) Food6 = false;
-				else if(Menu8.equals("���쵤��")) Food7 = false;
-				else if(Menu8.equals("�쵿")) Food8 = false;
-				else if(Menu8.equals("��������")) Food9 = false;
-				else if(Menu8.equals("�����")) Food10 = false;
-				else if(Menu8.equals("«��")) Food11 = false;
-				else if(Menu8.equals("������")) Food12 = false;
+				if(Menu8.equals("자장면")) Food1 = false;
+				else if(Menu8.equals("간짜장")) Food2 = false;
+				else if(Menu8.equals("군만두")) Food3 = false;
+				else if(Menu8.equals("냉면"))  Food4 = false;
+				else if(Menu8.equals("마파두부")) Food5 = false;
+				else if(Menu8.equals("볶음밥")) Food6 = false;
+				else if(Menu8.equals("새우덮밥")) Food7 = false;
+				else if(Menu8.equals("우동")) Food8 = false;
+				else if(Menu8.equals("제육덮밥")) Food9 = false;
+				else if(Menu8.equals("자장밥")) Food10 = false;
+				else if(Menu8.equals("짬뽕")) Food11 = false;
+				else if(Menu8.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice8 = 0; Menu8=null;
 				MenuPrice-=MenuPrice8*MenuNum8;MenuNum8=0;MenuPrice8=0;MenuNumber--;
@@ -1602,18 +1602,18 @@ public class ClientGUI extends JFrame
 		{
 			public void mousePressed(MouseEvent e) 
 			{
-				if(Menu9.equals("�����")) Food1 = false;
-				else if(Menu9.equals("��¥��")) Food2 = false;
-				else if(Menu9.equals("������")) Food3 = false;
-				else if(Menu9.equals("�ø�"))  Food4 = false;
-				else if(Menu9.equals("���ĵκ�")) Food5 = false;
-				else if(Menu9.equals("������")) Food6 = false;
-				else if(Menu9.equals("���쵤��")) Food7 = false;
-				else if(Menu9.equals("�쵿")) Food8 = false;
-				else if(Menu9.equals("��������")) Food9 = false;
-				else if(Menu9.equals("�����")) Food10 = false;
-				else if(Menu9.equals("«��")) Food11 = false;
-				else if(Menu9.equals("������")) Food12 = false;
+				if(Menu9.equals("자장면")) Food1 = false;
+				else if(Menu9.equals("간짜장")) Food2 = false;
+				else if(Menu9.equals("군만두")) Food3 = false;
+				else if(Menu9.equals("냉면"))  Food4 = false;
+				else if(Menu9.equals("마파두부")) Food5 = false;
+				else if(Menu9.equals("볶음밥")) Food6 = false;
+				else if(Menu9.equals("새우덮밥")) Food7 = false;
+				else if(Menu9.equals("우동")) Food8 = false;
+				else if(Menu9.equals("제육덮밥")) Food9 = false;
+				else if(Menu9.equals("자장밥")) Food10 = false;
+				else if(Menu9.equals("짬뽕")) Food11 = false;
+				else if(Menu9.equals("탕수육")) Food12 = false;
 				
 				MenuxPrice9 = 0; Menu9=null;
 				MenuPrice-=MenuPrice9*MenuNum9; MenuNum9=0;MenuPrice9=0;MenuNumber--;
@@ -1631,7 +1631,7 @@ public class ClientGUI extends JFrame
 			{
 				OrderEnding=false; ol.LastOrderScreen = true; 
 				LastOrderButton.setVisible(false);
-				MyMenu = null; MenuPrice = 0; // �޴����� 
+				MyMenu = null; MenuPrice = 0; // 메뉴가격 
 				Menu1=null;Menu2=null;Menu3=null;Menu4=null;Menu5=null;Menu6=null;Menu7=null;Menu8=null;Menu9=null;
 				MenuPrice1=0;MenuPrice2=0;MenuPrice3=0;MenuPrice4=0;MenuPrice5=0;MenuPrice6=0;MenuPrice7=0;MenuPrice8=0;MenuPrice9=0;
 				MenuxPrice1=0;MenuxPrice2=0;MenuxPrice3=0;MenuxPrice4=0;MenuxPrice5=0;MenuxPrice6=0;MenuxPrice7=0;MenuxPrice8=0;MenuxPrice9=0;
@@ -1639,7 +1639,7 @@ public class ClientGUI extends JFrame
 				MenuNumber = 0;Food1=false;Food2=false;Food3=false;Food4=false;Food5=false;Food6=false;
 				Food7=false;Food8=false;Food9=false;Food10=false;Food11=false;Food12=false;	
 				
-				ol.Link(MyID);	// ���� �ֹ� ��� 
+				ol.Link(MyID);	// 지난 주문 기록 
 			}
 		});
 		
@@ -1657,15 +1657,15 @@ public class ClientGUI extends JFrame
 				SimpleDateFormat dayTime = new SimpleDateFormat("yyyy.MM.dd hh:mm:ss");
 				String times = dayTime.format(new Date(time));
 				
-				if(Menu1!=null) MyMenu = Menu1+  MenuNum1+"��  /"; 
-				if(Menu2!=null) MyMenu += Menu2+ MenuNum2+"�� /";
-				if(Menu3!=null) MyMenu += Menu3+ MenuNum3+"�� /"; 
-				if(Menu4!=null) MyMenu += Menu4+ MenuNum4+"�� /";
-				if(Menu5!=null) MyMenu += Menu5+ MenuNum5+"�� /"; 
-				if(Menu6!=null) MyMenu += Menu6+ MenuNum6+"�� /";
-				if(Menu7!=null) MyMenu += Menu7+ MenuNum7+"�� /"; 
-				if(Menu8!=null) MyMenu += Menu8+ MenuNum8+"�� /";
-				if(Menu9!=null) MyMenu += Menu9+ MenuNum9+"�� /"; 
+				if(Menu1!=null) MyMenu = Menu1+  MenuNum1+"개  /"; 
+				if(Menu2!=null) MyMenu += Menu2+ MenuNum2+"개 /";
+				if(Menu3!=null) MyMenu += Menu3+ MenuNum3+"개 /"; 
+				if(Menu4!=null) MyMenu += Menu4+ MenuNum4+"개 /";
+				if(Menu5!=null) MyMenu += Menu5+ MenuNum5+"개 /"; 
+				if(Menu6!=null) MyMenu += Menu6+ MenuNum6+"개 /";
+				if(Menu7!=null) MyMenu += Menu7+ MenuNum7+"개 /"; 
+				if(Menu8!=null) MyMenu += Menu8+ MenuNum8+"개 /";
+				if(Menu9!=null) MyMenu += Menu9+ MenuNum9+"개 /"; 
 				
 				if(MyMenu!=null) 
 				{
@@ -1715,7 +1715,7 @@ public class ClientGUI extends JFrame
 		screenGraphic =screenImage.getGraphics();
 		g.drawImage(screenImage,0,0,null);
 		
-		if(loginScreen==true) // �α��� ȭ��
+		if(loginScreen==true) // 로그인 화면
 		{
 			
 			IDInput.setVisible(true);
@@ -1729,7 +1729,7 @@ public class ClientGUI extends JFrame
 			Confirmbutton2.setVisible(false);
 			g.drawImage(background, 0, 0, null);
 			
-			if(NotRegistAlert==true)	// ��ϵ��� ���� ����
+			if(NotRegistAlert==true)	// 등록되지 않은 계정
 			{
 				IDInput.setVisible(false);
 				PWInput.setVisible(false);
@@ -1737,7 +1737,7 @@ public class ClientGUI extends JFrame
 				g.drawImage(NotRegist,170,400,null);
 			}
 			
-			else if(DifferentPWAlert==true)	// ��й�ȣ �߸� �Է�
+			else if(DifferentPWAlert==true)	// 비밀번호 잘못 입력
 			{
 				IDInput.setVisible(false);
 				PWInput.setVisible(false);
@@ -1747,7 +1747,7 @@ public class ClientGUI extends JFrame
 			
 		}
 		
-		if(MemberScreen==true) // ȸ������ ȭ��
+		if(MemberScreen==true) // 회원가입 화면
 		{
 			g.drawImage(Memberbackground,0,0,null);
 			
@@ -1764,7 +1764,7 @@ public class ClientGUI extends JFrame
 			RegistMemberButton.setVisible(true);
 			ConfirmIDButton.setVisible(true);
 			
-			if(PleaseInput==true)			// �������� �Է� ���ҽ�
+			if(PleaseInput==true)			// 인적사항 입력 안할시
 			{
 				Regist_ID.setVisible(false);
 				Regist_PW.setVisible(false);
@@ -1776,7 +1776,7 @@ public class ClientGUI extends JFrame
 				Confirmbutton.setVisible(true);
 			}
 			
-			if(WrongPwScreen==true)			// ��й�ȣ Ȯ�� �߸� �Է½�
+			if(WrongPwScreen==true)			// 비밀번호 확인 잘못 입력시
 			{
 				Regist_ID.setVisible(false);
 				Regist_PW.setVisible(false);
@@ -1788,7 +1788,7 @@ public class ClientGUI extends JFrame
 				Confirmbutton.setVisible(true);
 			}
 			
-			if(pleaseConfirm==true)  // ���̵� �˻� ���Ҷ�
+			if(pleaseConfirm==true)  // 아이디 검사 안할때
 			{
 				Regist_ID.setVisible(false);
 				Regist_PW.setVisible(false);
@@ -1800,7 +1800,7 @@ public class ClientGUI extends JFrame
 				Confirmbutton.setVisible(true);
 			}
 			
-			if(pleaseID==true)	// ���̵� �ߺ��� ������
+			if(pleaseID==true)	// 아이디 중복이 있을때
 			{
 				Regist_ID.setVisible(false);
 				Regist_PW.setVisible(false);
@@ -1812,7 +1812,7 @@ public class ClientGUI extends JFrame
 				Confirmbutton.setVisible(true);
 			}
 			
-			if(correctID==true)	// �ߺ��� ���̵� ������
+			if(correctID==true)	// 중복된 아이디가 없을때
 			{
 				Regist_ID.setVisible(false);
 				Regist_PW.setVisible(false);
@@ -1825,7 +1825,7 @@ public class ClientGUI extends JFrame
 			}
 		}
 		
-		if(orderScreen==true) // �ֹ�ȭ��
+		if(orderScreen==true) // 주문화면
 		{
 			LogoutButton.setVisible(true);
 			
@@ -1874,7 +1874,7 @@ public class ClientGUI extends JFrame
 			}
 		}
 		
-		if(ol.LastOrderScreen == true) // ���� �ֹ� ȭ��
+		if(ol.LastOrderScreen == true) // 지난 주문 화면
 		{
 			ol.screenDraw(g);
 			add(OrderButton);
@@ -1882,12 +1882,12 @@ public class ClientGUI extends JFrame
 			OrderButton.setVisible(true);
 		}
 		
-		if(ShoppingBasket == true)	// ��ٱ��� ȭ��
+		if(ShoppingBasket == true)	// 장바구니 화면
 		{
 			g.drawImage(OrderScreen, 0, 0, null);
 			g.setColor(Color.black);
 			g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-			g.setFont(new Font("�ü�ü",Font.BOLD,20));
+			g.setFont(new Font("궁서체",Font.BOLD,20));
 			MenuADD.setVisible(true);Ordering.setVisible(true);
 			
 			if(Menu1!=null)
@@ -1895,7 +1895,7 @@ public class ClientGUI extends JFrame
 				
 				g.drawImage(OrderMenu,0,90,null);
 				g.drawString(Menu1,30,120);
-				g.drawString("��",600,120);
+				g.drawString("원",600,120);
 				if(MenuxPrice1!=0 && MenuxPrice1<10000) g.drawString(""+MenuxPrice1,550,120);
 				else if(MenuxPrice1<100000 && MenuxPrice1>=10000) g.drawString(""+MenuxPrice1,540,120);
 				else if(MenuxPrice1>=100000 && MenuxPrice1<1000000) g.drawString(""+MenuxPrice1,530,120);
@@ -1913,7 +1913,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,162,null);
 				g.drawString(Menu2,30,192);
-				g.drawString("��",600,192);
+				g.drawString("원",600,192);
 				if(MenuxPrice2!=0 && MenuxPrice2<10000) g.drawString(""+MenuxPrice2,550,192);
 				else if(MenuxPrice2<100000 && MenuxPrice2>=10000) g.drawString(""+MenuxPrice2,540,192);
 				else if(MenuxPrice2>=100000 && MenuxPrice2<1000000)g.drawString(""+MenuxPrice2,530,192);
@@ -1931,7 +1931,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,234,null);
 				g.drawString(Menu3,30,264);
-				g.drawString("��",600,264);
+				g.drawString("원",600,264);
 				if(MenuxPrice3!=0 && MenuxPrice3<10000) g.drawString(""+MenuxPrice3,550,264);
 				else if(MenuxPrice3<100000 && MenuxPrice3>=10000) g.drawString(""+MenuxPrice3,540,264);
 				else if(MenuxPrice3>=100000 && MenuxPrice3<1000000) g.drawString(""+MenuxPrice3,530,264);
@@ -1949,7 +1949,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,306,null);
 				g.drawString(Menu4,30,336);
-				g.drawString("��",600,336);
+				g.drawString("원",600,336);
 				if(MenuxPrice4!=0 && MenuxPrice4<10000) g.drawString(""+MenuxPrice4,550,336);
 				else if(MenuxPrice4<100000 && MenuxPrice4>=10000) g.drawString(""+MenuxPrice4,540,336);
 				else if(MenuxPrice4>=100000 && MenuxPrice4<1000000) g.drawString(""+MenuxPrice4,530,336);
@@ -1967,7 +1967,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,378,null);
 				g.drawString(Menu5,30,408);
-				g.drawString("��",600,408);
+				g.drawString("원",600,408);
 				if(MenuxPrice5!=0 && MenuxPrice5<10000) g.drawString(""+MenuxPrice5,550,408);
 				else if(MenuxPrice5<100000 && MenuxPrice5>=10000) g.drawString(""+MenuxPrice5,540,408);
 				else if(MenuxPrice5>=100000 && MenuxPrice5<1000000) g.drawString(""+MenuxPrice5,530,408);
@@ -1985,7 +1985,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,450,null);
 				g.drawString(Menu6,30,480);
-				g.drawString("��",600,480);
+				g.drawString("원",600,480);
 				if(MenuxPrice6!=0 && MenuxPrice6<10000) g.drawString(""+MenuxPrice6,550,480);
 				else if(MenuxPrice6<100000 && MenuxPrice6>=10000) g.drawString(""+MenuxPrice6,540,480);
 				else if(MenuxPrice6>=100000 && MenuxPrice6<1000000) g.drawString(""+MenuxPrice6,530,480);
@@ -2003,7 +2003,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,522,null);
 				g.drawString(Menu7,30,554);
-				g.drawString("��",600,554);
+				g.drawString("원",600,554);
 				if(MenuxPrice7!=0 && MenuxPrice7<10000) g.drawString(""+MenuxPrice7,550,554);
 				else if(MenuxPrice7<100000 && MenuxPrice7>=10000) g.drawString(""+MenuxPrice7,540,554);
 				else if(MenuxPrice7>=100000 && MenuxPrice7<1000000) g.drawString(""+MenuxPrice7,530,554);
@@ -2021,7 +2021,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,594,null);
 				g.drawString(Menu8,30,626);
-				g.drawString("��",600,626);
+				g.drawString("원",600,626);
 				if(MenuPrice8!=0 && MenuxPrice8<10000) g.drawString(""+MenuxPrice8,550,626);
 				else if(MenuxPrice8<100000 && MenuxPrice8>=10000) g.drawString(""+MenuxPrice8,540,626);
 				else if(MenuxPrice8>=100000 && MenuxPrice8<1000000) g.drawString(""+MenuxPrice8,530,626);
@@ -2039,7 +2039,7 @@ public class ClientGUI extends JFrame
 				g.setColor(Color.black);
 				g.drawImage(OrderMenu,0,666,null);
 				g.drawString(Menu9,30,698);
-				g.drawString("��",600,698);
+				g.drawString("원",600,698);
 				if(MenuxPrice9!=0 && MenuxPrice9<10000) g.drawString(""+MenuxPrice9,550,698);
 				else if(MenuxPrice9<100000 && MenuxPrice9>=10000) g.drawString(""+MenuxPrice9,540,698);
 				else if(MenuxPrice9>=100000 && MenuxPrice9<1000000)g.drawString(""+MenuxPrice9,530,698);
@@ -2055,16 +2055,16 @@ public class ClientGUI extends JFrame
 			
 			g.setColor(Color.red);
 			g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-			g.setFont(new Font("�ü�ü",Font.BOLD,20));
-			g.drawString("�հ�",30,780);
-			g.setFont(new Font("�ü�ü",Font.BOLD,30));
+			g.setFont(new Font("궁서체",Font.BOLD,20));
+			g.drawString("합계",30,780);
+			g.setFont(new Font("궁서체",Font.BOLD,30));
 			if(MenuPrice==0) g.drawString(""+MenuPrice,565,780);
 			else if (MenuPrice!=0 && MenuPrice<10000) g.drawString(""+MenuPrice,520,780);
 			else if (MenuPrice>=10000 && MenuPrice< 100000) g.drawString(""+MenuPrice,500,780);
 			else if (MenuPrice>=100000 && MenuPrice< 1000000) g.drawString(""+MenuPrice,480,780);
 			else g.drawString(""+MenuPrice,460,780);
 			
-			g.drawString("��",590,780);
+			g.drawString("원",590,780);
 			
 			if(ConfirmOrder==true)
 			{
@@ -2073,7 +2073,7 @@ public class ClientGUI extends JFrame
 			}
 		}
 		
-		if(OrderEnding == true) // �ֹ��Ϸ� ȭ��
+		if(OrderEnding == true) // 주문완료 화면
 		{
 			g.drawImage(OrderEnd,0,0,null);
 			MenuADD.setVisible(false); Ordering.setVisible(false);
@@ -2090,7 +2090,7 @@ public class ClientGUI extends JFrame
 			g.setFont(new Font("Gothic",Font.BOLD,20));
 			g.setColor(Color.black);
 			
-			//���ڿ� ũ��� ������ 
+			//문자열 크기로 나누기 
 			if(MyMenu.length()>35)
 			{
 				String Me1nu,Me2nu;
@@ -2101,7 +2101,7 @@ public class ClientGUI extends JFrame
 			}
 			else if(MyMenu.length()<=35) g.drawString(MyMenu,50,540);
 			
-			g.setFont(new Font("�ü�ü",Font.BOLD,20));
+			g.setFont(new Font("궁서체",Font.BOLD,20));
 			if(MyAddress.length()>30)
 			{
 				String Address1,Address2;
