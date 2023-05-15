@@ -1,0 +1,44 @@
+MySQL DB
+
+계정이름: root / 비밀번호: raincar
+(계정이름과 비밀번호 다를시 DB접속이 안됩니다.)
+DB TABLE : customerinfo / orderinfo (2개)
+
+//table 생성
+use malldb;
+
+create table customerinfo
+(
+	id varchar(20) not null,
+	pw varchar(20) not null,
+	name varchar(10) not null,
+	address varchar(50) not null,
+	phoneno char(15) not null,
+	primary key(id)
+);
+
+create table orderinfo
+(
+	number INT(11) primary key auto_increment,
+	time varchar(20) not null,
+	menulist varchar(100) not null,
+	price int(11) not null,
+	id varchar(20) not null
+);
+
+//
+
+※ 필독 (server GUI 관련해서)
+
+(INSERT 버튼)고객정보 GUI의 DB 삽입을 할라면 JTEXTFIELD 5개를 모두 채우고 INSERT 버튼을 누르면 DB가 삽입된다.
+
+
+(UPDATE 버튼)고객정보 GUI의 DB를 수정할라면 하나씩만 수정이 가능하다. 
+	     수정하고자 하는 정보를 더블클릭후 키보드로 수정한뒤 
+	     반드시 엔터키를 누른후 Update 버튼을 누르면 수정이 완료된다.
+
+
+		
+
+
+
